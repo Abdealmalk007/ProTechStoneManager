@@ -6,6 +6,11 @@ AppId={{DDA3B099-8B91-42A5-93B5-832641790B85}
 AppName={#AppName}
 AppVersion={#AppVersion}
 AppPublisher=Abu Omar - ProTech
+LicenseFile=LICENSE
+#ifdef PROTECH_SIGNED_BUILD
+SignTool=ProTechSigner
+SignedUninstaller=yes
+#endif
 AppPublisherURL=https://github.com/Abdealmalk007
 DefaultDirName={localappdata}\Programs\ProTechStoneManager
 DefaultGroupName={#AppName}

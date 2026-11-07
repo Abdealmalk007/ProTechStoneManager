@@ -36,3 +36,8 @@
 - قد يظهر Windows SmartScreen للبرامج غير الموقّعة؛ يحتاج المنتج إلى شهادة Code Signing موثوقة لتقليل التحذيرات.
 - توافق الهوامش الصغيرة مع حدود الطباعة الفعلية يعتمد على طراز الطابعة.
 - يجب مراجعة التزامات تراخيص مكتبات الطرف الثالث قبل التوزيع الواسع.
+
+
+## MIT License and Windows signing status
+
+Original Abu Omar / ProTech source is licensed under MIT. Third-party components keep their own terms. The existing Setup.exe has Authenticode status **NotSigned** and is held as a **draft GitHub Release** rather than publicly distributed as a trusted Windows installer. Trusted signing and clean Windows acceptance testing are required before publishing the installer.

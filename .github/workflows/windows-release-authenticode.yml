@@ -1,0 +1,28 @@
+name: Verify published Windows Signatures
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download release binaries
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        shell: pwsh
+        run: |
+          if (-not $env:RELEASE_TAG) { throw 'This audit runs only on GitHub Release events.' }
+          New-Item -ItemType Directory release-audit -Force | Out-Null
+          gh release download $env:RELEASE_TAG --repo $env:GITHUB_REPOSITORY --dir release-audit
+      - name: Require valid Authenticode
+        shell: pwsh
+        run: |
+          $items=@(Get-ChildItem release-audit -File | Where-Object { $_.Extension.ToLowerInvariant() -in @('.exe','.msi','.dll','.zip') } | Select-Object -ExpandProperty FullName)
+          if ($items.Count -eq 0) { throw 'No executable release assets.' }
+          & ./tools/Test-WindowsReleaseSignature.ps1 -Path $items
+          if ($LASTEXITCODE -ne 0) { throw 'Unsigned or untrusted Windows artifact.' }

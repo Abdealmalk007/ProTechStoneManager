@@ -1,5 +1,9 @@
 # ProTech Marble & Porcelain Manager v2.0.0
 
+**License:** [MIT](LICENSE) for original ProTech-owned code; dependencies retain their own licenses.
+
+**Windows Setup:** The current v2.0.0 installer is unsigned. It is kept in a GitHub draft release until trusted Code Signing and acceptance testing are completed. Do not claim SmartScreen warnings are eliminated.
+
 برنامج إدارة الرخام والبورسلان والعملاء والعقود والمخزون وتقارير PDF وExcel على Windows، باللغة العربية.
 
 **المطور:** Abu Omar — ProTech

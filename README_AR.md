@@ -49,9 +49,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build_windows.ps1
 الملف الناتج: Release\Setup.exe
 
 ## النشر على GitHub
-أنشئ مستودعًا جديدًا مستقلًا لهذا الإصدار، وارفع src وملفات الإعداد والبناء والوثائق فقط.
-ارفع Setup.exe وSHA256SUMS.txt في GitHub Releases.
-سير العمل .github/workflows/windows-release.yml يبني تلقائيًا عند دفع وسم v2.0.0 ويتيح تنزيل المثبت.
+المستودع الرسمي موجود: https://github.com/Abdealmalk007/ProTechStoneManager
+يمكن رفع شيفرة المصدر وملفات الإعداد والوثائق فقط دون أي ملفات بيانات شخصية.
+**ملف Setup.exe الحالي غير موقّع رقميًا:** يحتفظ GitHub بإصدار v2.0.0 كمسودة، ولا يجوز نشر المثبت للعامة حتى اجتياز فحص Authenticode باستخدام شهادة Code Signing موثوقة.
+سير عمل GitHub Actions يمنع إتاحة مثبت غير موقّع تلقائيًا؛ راجع tools/Test-WindowsReleaseSignature.ps1 وtools/Publish-SignedWindowsRelease.ps1.
 
 ## اعتبارات الأمان والتوزيع
 قد يعرض Windows SmartScreen تحذيرًا لأن التطبيق غير موقّع بشهادة Code Signing معترف بها.

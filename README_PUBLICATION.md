@@ -8,7 +8,7 @@
 
 **Source:** Public on main with README and build instructions. The release ZIP includes the MIT LICENSE.
 
-**Installer:** The supplied Setup.exe SHA-256 is e47ffc9ef5ecce1669bf53f344e268685cd50969733a58a64338bc645b2e9a1d. Authenticode status is **NotSigned**. It is retained in a **draft GitHub Release** only, pending qualified signing. It is not a published trusted Windows installer.
+**Installer (rebuilt 2026-11-09):** The rebuilt and clean-install-tested Setup.exe SHA-256 is 8c7dccb61320bf220875a248b6938e01cdfe6c3fe8a75524bf4c40c52f1a84b0 (47,967,221 bytes). Its MIT license appears in the Inno Setup agreement, but Authenticode status remains **NotSigned**. The latest file replaces the previous asset in the **draft GitHub Release v2.0.0**, pending a trusted Code Signing certificate. It is not yet a publicly downloadable signed Windows installer. The public website currently offers the source ZIP instead.
 
 **Security:** No customer databases, orders, inventories, attachments, or private backups are included in the public source. A developer contact phone/email appears intentionally in application metadata.
 

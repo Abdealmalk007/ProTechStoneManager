@@ -1,6 +1,13 @@
 # ProTech Marble & Porcelain Manager v2.0.0
 
-**License:** [MIT](LICENSE) for original ProTech-owned code; dependencies retain their own licenses.
+> **Current license / الترخيص الحالي: All Rights Reserved.**
+> © 2026 Abu Omar / ProTech. Prior written permission is required for use,
+> copying, modification, publication or distribution of current ProTech-owned material.
+> جميع الحقوق محفوظة. يلزم إذن كتابي مسبق للاستخدام أو النسخ أو التعديل أو التوزيع.
+> Third-party licenses and previously distributed MIT copies remain unaffected.
+> See [LICENSE](LICENSE) and [licensing transition](LICENSING_TRANSITION.md).
+
+**License:** [All Rights Reserved](LICENSE) for original ProTech-owned code; dependencies retain their own licenses.
 
 **Windows Setup:** The current v2.0.0 installer is unsigned. It is kept in a GitHub draft release until trusted Code Signing and acceptance testing are completed. Do not claim SmartScreen warnings are eliminated.
 
@@ -58,5 +65,5 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build_windows.ps1
 قد يعرض Windows SmartScreen تحذيرًا لأن التطبيق غير موقّع بشهادة Code Signing معترف بها.
 لا تعطل SmartScreen للمستخدمين؛ التوقيع الرقمي الصحيح هو الحل المعتمد.
 
-حقوق برنامج ProTech محفوظة للمطور Abu Omar. لم تُحدّد رخصة مفتوحة المصدر بعد.
+حقوق برنامج ProTech محفوظة للمطور Abu Omar. الترخيص الحالي All Rights Reserved؛ راجع LICENSE.
 راجع THIRD_PARTY_NOTICES.md لمكتبات الطرف الثالث ومتطلبات إعادة توزيعها.

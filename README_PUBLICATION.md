@@ -1,12 +1,19 @@
 # ProTechStoneManager — GitHub publication
 
+> **Current license / الترخيص الحالي: All Rights Reserved.**
+> © 2026 Abu Omar / ProTech. Prior written permission is required for use,
+> copying, modification, publication or distribution of current ProTech-owned material.
+> جميع الحقوق محفوظة. يلزم إذن كتابي مسبق للاستخدام أو النسخ أو التعديل أو التوزيع.
+> Third-party licenses and previously distributed MIT copies remain unaffected.
+> See [LICENSE](LICENSE) and [licensing transition](LICENSING_TRANSITION.md).
+
 **Repository:** https://github.com/Abdealmalk007/ProTechStoneManager
 
 **Version:** 2.0.0
 
-**License:** MIT for original Abu Omar / ProTech code. Qt/PySide6 and other third-party packages retain their respective terms; consult THIRD_PARTY_NOTICES.md and LICENSE_SCOPE.md.
+**License:** All Rights Reserved for original Abu Omar / ProTech code. Qt/PySide6 and other third-party packages retain their respective terms; consult THIRD_PARTY_NOTICES.md and LICENSE_SCOPE.md.
 
-**Source:** Public on main with README and build instructions. The release ZIP includes the MIT LICENSE.
+**Source:** Public on main with README and build instructions. Earlier release ZIPs include their original MIT LICENSE; future distributions must include the current root LICENSE.
 
 **Installer (rebuilt 2026-11-09):** The rebuilt and clean-install-tested Setup.exe SHA-256 is 8c7dccb61320bf220875a248b6938e01cdfe6c3fe8a75524bf4c40c52f1a84b0 (47,967,221 bytes). Its MIT license appears in the Inno Setup agreement, but Authenticode status remains **NotSigned**. The latest file replaces the previous asset in the **draft GitHub Release v2.0.0**, pending a trusted Code Signing certificate. It is not yet a publicly downloadable signed Windows installer. The public website currently offers the source ZIP instead.
 
